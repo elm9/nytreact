@@ -23,6 +23,11 @@ const scrapeWeb = () => {
                 .find("")
                 .attr("href");
 
+            // article's published date
+            let date = $(this)
+                .find("")
+                .date()
+
             // article URL
             let url = $(this)
                 .find("")
