@@ -41,4 +41,6 @@ const scrapeWeb = () => {
     });
 };
 
+
+
 module.exports = scrapeWeb;
