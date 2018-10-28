@@ -13,7 +13,11 @@ export default {
     deleteArticle: function(id) {
         return axios.delete("/api/articles/" + id);
     },
-    // save article to database
+    // search articles in database
+    searchArticles: function(articleData) {
+        return axios.get("/api/articles", articleData);
+    },
+    // save articles to saved
     saveArticle: function(articleData) {
         return axios.post("/api/articles", articleData);
     }
